@@ -1,18 +1,18 @@
-const express = require('express')
-const debug = require('debug')('app')
-const morgan = require('morgan')
+const express = require('express');
+const debug = require('debug')('app');
+const morgan = require('morgan');
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
-app.use(morgan('combined'))
+app.use(morgan('combined'));
 
 app.get("/", (req,res) => {
 
-    res.send('Hello borntoDev')
+    res.send('Hello borntoDev');
 
 })
 
 app.listen(port, () => {
-    debug("Listening on port" + " : "+port)
+    debug("Listening on port" + " : "+port);
 })
